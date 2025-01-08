@@ -6,7 +6,7 @@ function handleForm(event) {
     const engMark = Number(document.getElementById('engMark').value);
     const mathMark = Number(document.getElementById('mathMark').value);
     const sciMark  = Number(document.getElementById('sciMark').value);
-    const totalMark  = Number(document.getElementById('totalMark').value);
+    const totalMark  = 300;
 
     const obtainedMarks = engMark + mathMark + sciMark;
 
