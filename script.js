@@ -5,8 +5,8 @@ function handleForm(event) {
     const fullName = document.getElementById('name').value;
     const engMark = Number(document.getElementById('engMark').value);
     const mathMark = Number(document.getElementById('mathMark').value);
-    const sciMark  = Number(document.getElementById('sciMark').value);
-    const totalMark  = 300;
+    const sciMark = Number(document.getElementById('sciMark').value);
+    const totalMark = 300;
 
     const obtainedMarks = engMark + mathMark + sciMark;
 
@@ -30,6 +30,14 @@ function handleForm(event) {
         grade = 'Invalid';
         reMarks = 'Null';
     }
+
+    document.write("<h2 style= 'color: #0B5ED7;'>Result Summary</h2>");
+    document.write("<p>Full Name: " + fullName + "</p>");
+    document.write("<p>Marks Obtained: " + obtainedMarks + "</p>");
+    document.write("<p>Total Marks: " + totalMark + "</p>");
+    document.write("<p>Percentage: " + roundedPercentage + "%</p>");
+    document.write("<p>Grade: " + grade + "</p>");
+    document.write("<p>Remarks: " + reMarks + "</p>");
 
 
     console.log('Full Name:', fullName);
