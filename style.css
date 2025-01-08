@@ -1,0 +1,15 @@
+.m-header {
+    font-family: 'Open Sans', sans-serif;
+    color: #0B5ED7;
+    font-weight: bold;
+}
+
+.f-input:placeholder-shown {
+    font-family: 'Open Sans', sans-serif;
+    color: #0B5ED7;
+    font-size: 13px;
+}
+
+.f-input:placeholder-shown::placeholder {
+    color: #0B5ED7;
+}
